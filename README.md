@@ -1,26 +1,50 @@
-# MovieCatalogAPI
+<div align="right">
+  <a href="https://res.cloudinary.com/dsnwi9kev/raw/upload/v1780001475/BTBS498_Task4_Rapor_h6gwme.docx">
+    <img src="https://img.shields.io/badge/BTBS498_Task4_Rapor-indir-2563eb?style=for-the-badge&logo=microsoftword&logoColor=white" alt="BTBS498 Task4 Rapor" />
+  </a>
+</div>
 
-MovieCatalogAPI, ASP.NET Core Web API + React (Vite + Tailwind) ile gelistirilmis full-stack bir film katalog projesidir.
+<h1 align="center">MovieCatalogAPI</h1>
 
-Bu proje, BTBS498 dersi kapsaminda RESTful servis yapisini, model-service-controller mimarisini ve API test surecini uygulamali gostermek icin hazirlanmistir.
+<p align="center">
+  <img src="https://img.shields.io/badge/ASP.NET_Core-Web_API-2563eb?style=flat-square&logo=dotnet" alt="ASP.NET Core" />
+  <img src="https://img.shields.io/badge/React-Vite-3b82f6?style=flat-square&logo=react" alt="React Vite" />
+  <img src="https://img.shields.io/badge/Tailwind-CSS-60a5fa?style=flat-square&logo=tailwindcss" alt="Tailwind" />
+  <img src="https://img.shields.io/badge/BTBS498-Task_4-1d4ed8?style=flat-square" alt="BTBS498 Task 4" />
+</p>
+
+<p align="center">
+  <strong>ASP.NET Core Web API</strong> + <strong>React (Vite + Tailwind)</strong> ile gelistirilmis full-stack film katalog projesi.
+</p>
+
+<p align="center">
+  RESTful servis yapisi, model-service-controller mimarisi ve API test surecini uygulamali gosterir.
+</p>
+
+---
 
 ## Ozellikler
 
-- Film listeleme, detay, ekleme, guncelleme, silme (CRUD)
-- Poster URL ve aciklama alani
-- iOS hissi veren modern arayuz tasarimi
-- Varsayilan film listesi (12 adet baslangic filmi)
+| | |
+|---|---|
+| CRUD | Film listeleme, detay, ekleme, guncelleme, silme |
+| Veri | Poster URL ve aciklama alani |
+| Arayuz | iOS hissi veren modern tasarim |
+| Baslangic | 12 adet varsayilan film |
 
 ## Teknolojiler
 
-- Backend: ASP.NET Core (`net10.0`)
-- Frontend: React + Vite
-- Stil: Tailwind CSS
+- **Backend:** ASP.NET Core (`net10.0`)
+- **Frontend:** React + Vite
+- **Stil:** Tailwind CSS
 
 ## Proje Yapisi
 
-- `MovieLibraryAPI/` -> Web API projesi
-- `MovieLibraryUI/` -> Frontend projesi
+```
+MovieCatalogAPI/
+├── MovieLibraryAPI/    # Web API
+└── MovieLibraryUI/   # React frontend
+```
 
 ## Ekran Goruntuleri
 
@@ -46,11 +70,11 @@ Film listesi, detay alani, ekleme formu ve CRUD butonlari.
 
 ![Postman PUT 200 OK](https://res.cloudinary.com/dsnwi9kev/image/upload/v1779984632/PUT3_rnvdac.png)
 
-**UI (guncellemeden once):** `#1 Inception` ve diger filmler.
+**UI (guncellemeden once):** `#1 Seven` ve diger filmler.
 
 ![Filmler listesi - PUT oncesi](https://res.cloudinary.com/dsnwi9kev/image/upload/v1779984633/PUT1_yvn8yr.png)
 
-**UI (guncellemeden sonra):** `#1` kaydi guncellenmis icerikle listede (`Seven`).
+**UI (guncellemeden sonra):** `#1` kaydi guncellenmis icerikle listede (`Inception`).
 
 ![Filmler listesi - PUT sonrasi](https://res.cloudinary.com/dsnwi9kev/image/upload/v1779984634/PUT2_sgzpek.png)
 
@@ -67,6 +91,8 @@ Film listesi, detay alani, ekleme formu ve CRUD butonlari.
 **UI (sildikten sonra):** `#12` kaydi listeden kaldirilmis.
 
 ![Filmler listesi - sildikten sonra](https://res.cloudinary.com/dsnwi9kev/image/upload/v1779984632/DELETE2_uc9tqh.png)
+
+---
 
 ## Gereksinimler
 
@@ -115,9 +141,12 @@ cd MovieLibraryAPI
 dotnet run --launch-profile https
 ```
 
-API adresleri:
-- `https://localhost:7270` (onerilen)
-- `http://localhost:5063`
+**API adresleri:**
+
+| Ortam | URL |
+|-------|-----|
+| HTTPS (onerilen) | `https://localhost:7270` |
+| HTTP | `http://localhost:5063` |
 
 ### Frontend'i calistir
 
@@ -126,12 +155,13 @@ cd MovieLibraryUI
 npm run dev
 ```
 
-UI adresi:
-- `http://localhost:5173`
+**UI adresi:** `http://localhost:5173`
+
+---
 
 ## API Endpointleri
 
-Base URL: `https://localhost:7270/api/movies`
+**Base URL:** `https://localhost:7270/api/movies`
 
 | Method | Endpoint | Aciklama | Basarili yanit |
 |--------|----------|----------|----------------|
@@ -145,7 +175,7 @@ Base URL: `https://localhost:7270/api/movies`
 
 - Postman, SoapUI veya `MovieLibraryAPI.http` ile endpoint testleri yapilabilir.
 - Frontend uzerinden CRUD islemleri dogrudan test edilebilir.
-- Repo: [https://github.com/Boreas44/MovieCatalogAPI](https://github.com/Boreas44/MovieCatalogAPI)
+- Repo: [github.com/Boreas44/MovieCatalogAPI](https://github.com/Boreas44/MovieCatalogAPI)
 
 ### Postman ile PUT ornegi
 
@@ -155,18 +185,18 @@ Base URL: `https://localhost:7270/api/movies`
 
 ```json
 {
-  "title": "Seven (Guncellendi)",
-  "posterUrl": "https://image.tmdb.org/t/p/w500/6yoghtyTpznpBik8EngEmJskVUO.jpg",
+  "title": "Inception (Guncellendi)",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6d.jpg",
   "description": "Guncellenmis aciklama",
-  "director": "David Fincher",
-  "actors": ["Brad Pitt", "Morgan Freeman"],
-  "releaseYear": 1995,
-  "genre": "Crime, Thriller",
-  "imdbRating": 8.6
+  "director": "Christopher Nolan",
+  "actors": ["Leonardo DiCaprio", "Joseph Gordon-Levitt"],
+  "releaseYear": 2010,
+  "genre": "Sci-Fi, Thriller",
+  "imdbRating": 8.8
 }
 ```
 
-Beklenen: `200 OK` ve guncellenmis film JSON'u.
+Beklenen: `200 OK` ve guncellenmis film JSON'u (`Seven` -> `Inception`).
 
 ### Postman ile DELETE ornegi
 
@@ -197,6 +227,14 @@ Beklenen: `204 No Content`. Dogrulama icin `GET /api/movies/12` -> `404 Not Foun
 - `address already in use` hatasinda ilgili portu kullanan process kapatilmalidir.
 - Gorsel URL hataliysa UI tarafinda placeholder poster gosterilir.
 
-## Lisans
+---
 
-Bu proje egitim/odev amacli hazirlanmistir.
+<p align="center">
+  <sub>Bu proje egitim / odev amacli hazirlanmistir — BTBS498 Task 4</sub>
+</p>
+
+<p align="center">
+  <a href="https://res.cloudinary.com/dsnwi9kev/raw/upload/v1780001475/BTBS498_Task4_Rapor_h6gwme.docx">
+    <img src="https://img.shields.io/badge/Raporu_indir-BTBS498_Task4-1e40af?style=flat-square" alt="Rapor indir" />
+  </a>
+</p>

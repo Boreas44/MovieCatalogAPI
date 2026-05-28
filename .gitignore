@@ -1,0 +1,8 @@
+# Rapor / AI talimat dosyalari (repoya gitmez)
+RAPOR-TALIMAT.txt
+*-rapor-talimat.txt
+claude-rapor-talimat.txt
+
+# .NET build ciktilari
+**/bin/
+**/obj/
