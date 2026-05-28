@@ -136,12 +136,27 @@ function App() {
       <div className="mx-auto w-full max-w-7xl rounded-[2rem] border border-slate-200/80 bg-white/95 p-5 shadow-[0_24px_70px_rgba(30,41,59,0.22)] backdrop-blur">
         <div className="mx-auto mb-4 h-1.5 w-28 rounded-full bg-slate-300" />
         <header className="mb-6 rounded-2xl border border-blue-200 bg-gradient-to-r from-blue-500 via-blue-400 to-sky-400 p-6 text-white">
-          <p className="bg-gradient-to-r from-white via-slate-100 to-blue-100 bg-clip-text text-xs uppercase tracking-[0.25em] text-transparent">
-            Movie Catalog
-          </p>
-          <h1 className="mt-2 bg-gradient-to-r from-white via-slate-100 to-blue-100 bg-clip-text text-2xl font-bold text-transparent">
-            Movie Library
-          </h1>
+          <div className="flex flex-wrap items-start justify-between gap-3">
+            <div>
+              <p className="bg-gradient-to-r from-white via-slate-100 to-blue-100 bg-clip-text text-xs uppercase tracking-[0.25em] text-transparent">
+                Movie Catalog
+              </p>
+              <h1 className="mt-2 bg-gradient-to-r from-white via-slate-100 to-blue-100 bg-clip-text text-2xl font-bold text-transparent">
+                Movie Library
+              </h1>
+            </div>
+            <a
+              href="https://github.com/Boreas44/MovieCatalogAPI"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex min-w-[380px] items-center justify-center gap-3 rounded-full border-2 border-black/70 bg-black px-8 py-3.5 text-lg text-white shadow-lg transition hover:bg-zinc-900"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" className="h-8 w-8 fill-current">
+                <path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.22-3.37-1.22-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.58 2.35 1.12 2.92.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.15-4.56-5.12 0-1.13.39-2.06 1.03-2.79-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.06A9.3 9.3 0 0 1 12 7.2c.85 0 1.71.12 2.51.35 1.9-1.34 2.74-1.06 2.74-1.06.55 1.42.2 2.47.1 2.73.64.73 1.03 1.66 1.03 2.79 0 3.98-2.34 4.85-4.57 5.11.36.32.68.95.68 1.92 0 1.39-.01 2.5-.01 2.84 0 .27.18.6.69.49A10.22 10.22 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z" />
+              </svg>
+              BTBS498 TASK 3 GitHub Linki
+            </a>
+          </div>
         </header>
 
         <section className="mb-4 rounded-2xl border border-blue-200 bg-white p-3">

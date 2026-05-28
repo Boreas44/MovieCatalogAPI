@@ -172,12 +172,12 @@ public class MovieService : IMovieService
         return movie;
     }
 
-    public bool Update(int id, Movie movie)
+    public Movie? Update(int id, Movie movie)
     {
         var existingMovie = GetById(id);
         if (existingMovie is null)
         {
-            return false;
+            return null;
         }
 
         existingMovie.Title = movie.Title;
@@ -188,7 +188,7 @@ public class MovieService : IMovieService
         existingMovie.ReleaseYear = movie.ReleaseYear;
         existingMovie.Genre = movie.Genre;
         existingMovie.ImdbRating = movie.ImdbRating;
-        return true;
+        return existingMovie;
     }
 
     public bool Delete(int id)

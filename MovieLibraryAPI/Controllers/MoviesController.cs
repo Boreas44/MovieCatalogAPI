@@ -43,13 +43,13 @@ public class MoviesController : ControllerBase
     [HttpPut("{id:int}")]
     public IActionResult Update(int id, [FromBody] Movie movie)
     {
-        var updated = _movieService.Update(id, movie);
-        if (!updated)
+        var updatedMovie = _movieService.Update(id, movie);
+        if (updatedMovie is null)
         {
             return NotFound();
         }
 
-        return NoContent();
+        return Ok(updatedMovie);
     }
 
     [HttpDelete("{id:int}")]
