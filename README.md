@@ -30,6 +30,30 @@ Film listesi, detay alani, ekleme formu ve CRUD butonlari.
 
 ![Movie Library ana arayuz](https://res.cloudinary.com/dsnwi9kev/image/upload/v1779984693/6ab64aef-9999-449d-80d3-ff576a8daadb.png)
 
+### POST islemi (Postman + UI)
+
+**Postman:** `POST /api/movies` — basarili yanit `201 Created` (ornek: Interstellar, `id: 14`)
+
+![Postman POST 201 Created](https://res.cloudinary.com/dsnwi9kev/image/upload/v1779984632/POST1_ciqchg.png)
+
+**UI (ekleme sonrasi):** yeni film listede gorunur (`#14 Interstellar`).
+
+![Filmler listesi - POST sonrasi](https://res.cloudinary.com/dsnwi9kev/image/upload/v1779984634/POST2_esqkeb.png)
+
+### PUT islemi (Postman + UI)
+
+**Postman:** `PUT /api/movies/1` — basarili yanit `200 OK` + guncellenmis film JSON'u
+
+![Postman PUT 200 OK](https://res.cloudinary.com/dsnwi9kev/image/upload/v1779984632/PUT3_rnvdac.png)
+
+**UI (guncellemeden once):** `#1 Inception` ve diger filmler.
+
+![Filmler listesi - PUT oncesi](https://res.cloudinary.com/dsnwi9kev/image/upload/v1779984633/PUT1_yvn8yr.png)
+
+**UI (guncellemeden sonra):** `#1` kaydi guncellenmis icerikle listede (`Seven`).
+
+![Filmler listesi - PUT sonrasi](https://res.cloudinary.com/dsnwi9kev/image/upload/v1779984634/PUT2_sgzpek.png)
+
 ### DELETE islemi (Postman + UI)
 
 **Postman:** `DELETE /api/movies/12` — basarili yanit `204 No Content`
