@@ -2,6 +2,8 @@
 
 MovieCatalogAPI, ASP.NET Core Web API + React (Vite + Tailwind) ile gelistirilmis full-stack bir film katalog projesidir.
 
+Bu proje, BTBS498 dersi kapsaminda RESTful servis yapisini, model-service-controller mimarisini ve API test surecini uygulamali gostermek icin hazirlanmistir.
+
 ## Ozellikler
 
 - Film listeleme, detay, ekleme, guncelleme, silme (CRUD)
