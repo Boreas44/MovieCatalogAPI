@@ -1,6 +1,6 @@
 <div align="right">
   <a href="https://res.cloudinary.com/dsnwi9kev/raw/upload/v1780001475/BTBS498_Task4_Rapor_h6gwme.docx">
-    <img src="https://img.shields.io/badge/BTBS498_Task4_Rapor-indir-2563eb?style=for-the-badge&logo=microsoftword&logoColor=white" alt="BTBS498 Task4 Rapor" />
+    <img src="https://img.shields.io/badge/BTBS498_Task4_Rapor-indir-2563eb?style=for-the-badge&logo=https://upload.wikimedia.org/wikipedia/commons/f/fd/Microsoft_Office_Word_%282019%E2%80%93present%29.svg&logoColor=white&labelColor=2b579a" alt="BTBS498 Task4 Rapor (Word)" />
   </a>
 </div>
 
@@ -235,6 +235,6 @@ Beklenen: `204 No Content`. Dogrulama icin `GET /api/movies/12` -> `404 Not Foun
 
 <p align="center">
   <a href="https://res.cloudinary.com/dsnwi9kev/raw/upload/v1780001475/BTBS498_Task4_Rapor_h6gwme.docx">
-    <img src="https://img.shields.io/badge/Raporu_indir-BTBS498_Task4-1e40af?style=flat-square" alt="Rapor indir" />
+    <img src="https://img.shields.io/badge/Raporu_indir-BTBS498_Task4-2563eb?style=flat-square&logo=https://upload.wikimedia.org/wikipedia/commons/f/fd/Microsoft_Office_Word_%282019%E2%80%93present%29.svg&logoColor=white&labelColor=2b579a" alt="Rapor indir (Word)" />
   </a>
 </p>
