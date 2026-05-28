@@ -24,15 +24,25 @@ Bu proje, BTBS498 dersi kapsaminda RESTful servis yapisini, model-service-contro
 
 ## Ekran Goruntuleri
 
-> Bu bolume proje ekran goruntulerini ekleyebilirsin.
->
-> Ornek:
-> - `docs/home.png`
-> - `docs/detail.png`
->
-> Markdown ile gosterim:
->
-> `![Home](docs/home.png)`
+### Ana arayuz (Movie Library)
+
+Film listesi, detay alani, ekleme formu ve CRUD butonlari.
+
+![Movie Library ana arayuz](https://res.cloudinary.com/dsnwi9kev/image/upload/v1779984693/6ab64aef-9999-449d-80d3-ff576a8daadb.png)
+
+### DELETE islemi (Postman + UI)
+
+**Postman:** `DELETE /api/movies/12` — basarili yanit `204 No Content`
+
+![Postman DELETE 204](https://res.cloudinary.com/dsnwi9kev/image/upload/v1779984631/DELETE3_k9xuen.png)
+
+**UI (silmeden once):** listede `#12 Pulp Fiction` gorunur.
+
+![Filmler listesi - silmeden once](https://res.cloudinary.com/dsnwi9kev/image/upload/v1779984632/DELETE1_vp8phm.png)
+
+**UI (sildikten sonra):** `#12` kaydi listeden kaldirilmis.
+
+![Filmler listesi - sildikten sonra](https://res.cloudinary.com/dsnwi9kev/image/upload/v1779984632/DELETE2_uc9tqh.png)
 
 ## Gereksinimler
 
