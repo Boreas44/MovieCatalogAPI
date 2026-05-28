@@ -1,0 +1,134 @@
+# MovieCatalogAPI
+
+MovieCatalogAPI, ASP.NET Core Web API + React (Vite + Tailwind) ile gelistirilmis full-stack bir film katalog projesidir.
+
+## Ozellikler
+
+- Film listeleme, detay, ekleme, guncelleme, silme (CRUD)
+- Poster URL ve aciklama alani
+- iOS hissi veren modern arayuz tasarimi
+- Varsayilan film listesi (12 adet baslangic filmi)
+
+## Teknolojiler
+
+- Backend: ASP.NET Core (`net10.0`)
+- Frontend: React + Vite
+- Stil: Tailwind CSS
+
+## Proje Yapisi
+
+- `MovieLibraryAPI/` -> Web API projesi
+- `MovieLibraryUI/` -> Frontend projesi
+
+## Ekran Goruntuleri
+
+> Bu bolume proje ekran goruntulerini ekleyebilirsin.
+>
+> Ornek:
+> - `docs/home.png`
+> - `docs/detail.png`
+>
+> Markdown ile gosterim:
+>
+> `![Home](docs/home.png)`
+
+## Gereksinimler
+
+- .NET SDK 10
+- Node.js (LTS)
+- npm
+
+## Hizli Baslangic
+
+### 1) API'yi calistir
+
+```bash
+cd MovieLibraryAPI
+dotnet restore
+dotnet run --launch-profile https
+```
+
+### 2) UI'i calistir (ayri terminal)
+
+```bash
+cd MovieLibraryUI
+npm install
+npm run dev
+```
+
+## Calisma Adimlari
+
+### Backend kurulum
+
+```bash
+cd MovieLibraryAPI
+dotnet restore
+```
+
+### Frontend kurulum
+
+```bash
+cd ../MovieLibraryUI
+npm install
+```
+
+### Backend'i calistir
+
+```bash
+cd MovieLibraryAPI
+dotnet run --launch-profile https
+```
+
+API adresleri:
+- `https://localhost:7270` (onerilen)
+- `http://localhost:5063`
+
+### Frontend'i calistir
+
+```bash
+cd MovieLibraryUI
+npm run dev
+```
+
+UI adresi:
+- `http://localhost:5173`
+
+## API Endpointleri
+
+Base URL: `https://localhost:7270/api/movies`
+
+- `GET /api/movies` -> tum filmleri listeler
+- `GET /api/movies/{id}` -> tek film detayi
+- `POST /api/movies` -> yeni film ekler
+- `PUT /api/movies/{id}` -> film gunceller
+- `DELETE /api/movies/{id}` -> film siler
+
+## Test
+
+- Postman, SoapUI veya `MovieLibraryAPI.http` ile endpoint testleri yapilabilir.
+- Frontend uzerinden CRUD islemleri dogrudan test edilebilir.
+
+## Ornek POST Body
+
+```json
+{
+  "title": "Interstellar",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg",
+  "description": "Insanligin yasam savasi verdigi bir gelecekte, bir grup astronot yeni bir yuva bulmak icin uzay-zamanin derinliklerine yolculuk eder.",
+  "director": "Christopher Nolan",
+  "actors": ["Matthew McConaughey", "Anne Hathaway"],
+  "releaseYear": 2014,
+  "genre": "Sci-Fi",
+  "imdbRating": 8.7
+}
+```
+
+## Notlar
+
+- API in-memory liste kullandigi icin uygulama her yeniden baslatildiginda varsayilan filmler yuklenir.
+- `address already in use` hatasinda ilgili portu kullanan process kapatilmalidir.
+- Gorsel URL hataliysa UI tarafinda placeholder poster gosterilir.
+
+## Lisans
+
+Bu proje egitim/odev amacli hazirlanmistir.
