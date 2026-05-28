@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "HGCT2y48tIc=",
+  "success": true,
+  "projectFilePath": "C:\\Projeler\\MovieCatalogAPI\\MovieLibraryAPI\\MovieLibraryAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\VeliB\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.8\\microsoft.aspnetcore.openapi.10.0.8.nupkg.sha512",
+    "C:\\Users\\VeliB\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

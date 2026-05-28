@@ -1,0 +1,59 @@
+@MovieLibraryAPI_Http = http://localhost:5063
+@MovieLibraryAPI_Https = https://localhost:7270
+
+GET {{MovieLibraryAPI_Http}}/weatherforecast
+Accept: application/json
+
+###
+
+GET {{MovieLibraryAPI_Https}}/weatherforecast
+Accept: application/json
+
+###
+
+GET {{MovieLibraryAPI_Https}}/api/movies
+Accept: application/json
+
+###
+
+GET {{MovieLibraryAPI_Https}}/api/movies/1
+Accept: application/json
+
+###
+
+POST {{MovieLibraryAPI_Https}}/api/movies
+Content-Type: application/json
+
+{
+  "title": "Interstellar",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg",
+  "description": "Insanligin yasam savasi verdigi bir gelecekte, bir grup astronot yeni bir yuva bulmak icin uzay-zamanin derinliklerine yolculuk eder.",
+  "director": "Christopher Nolan",
+  "actors": ["Matthew McConaughey", "Anne Hathaway"],
+  "releaseYear": 2014,
+  "genre": "Sci-Fi",
+  "imdbRating": 8.7
+}
+
+###
+
+PUT {{MovieLibraryAPI_Https}}/api/movies/1
+Content-Type: application/json
+
+{
+  "title": "Inception (Updated)",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/8IB2e4r4oVhHnANbnm7O3Tj6tF8.jpg",
+  "description": "Bilinçalti katmanlarinda gecen karmaşık bir soygun hikayesi; ekip bu kez bir fikri zihinlere ekmeye calisir.",
+  "director": "Christopher Nolan",
+  "actors": ["Leonardo DiCaprio", "Tom Hardy"],
+  "releaseYear": 2010,
+  "genre": "Sci-Fi",
+  "imdbRating": 9.0
+}
+
+###
+
+DELETE {{MovieLibraryAPI_Https}}/api/movies/1
+Accept: application/json
+
+###
