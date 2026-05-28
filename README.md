@@ -29,7 +29,7 @@
 |---|---|
 | CRUD | Film listeleme, detay, ekleme, guncelleme, silme |
 | Veri | Poster URL ve aciklama alani |
-| Arayuz | iOS hissi veren modern tasarim |
+| Arayuz | Basit, ve modern tasarim |
 | Baslangic | 12 adet varsayilan film |
 
 ## Teknolojiler
